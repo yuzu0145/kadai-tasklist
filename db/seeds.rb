@@ -1,3 +1,3 @@
-Task.create(status: 'test title 1', content: 'test content 1')
-Task.create(status: 'test title 2', content: 'test content 2')
-Task.create(status: 'test title 3', content: 'test content 3')
+Task.create(status: 'test1', content: 'test1')
+Task.create(status: 'test2', content: 'test 2')
+Task.create(status: 'test', content: 'test 3')
