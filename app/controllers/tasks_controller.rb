@@ -3,10 +3,11 @@ class TasksController < ApplicationController
   before_action :correct_user, only: [:show,:edit,:update,:destroy]
   
   def index
-      @tasks = Task.order(id: :desc).page(params[:page]).per(10)
+      @tasks = current_user.tasks.order(id: :desc).page(params[:page]).per(10)
   end
 
   def show
+    
   end
 
   def new

@@ -1,18 +1,19 @@
-<h1>id: <%= @task.id %>の詳細ページ</h1>
+<h1>id: <%= @task.id %> のメッセージ詳細ページ</h1>
 
 <table class="table table-bordered">
-    <tr>
-        <th>id</th>
-        <td><%= @task.id %></td>
-    </tr>
-    <tr>
-        <th>ステータスタスク</th>
-        <td><%= @task.status %></td>
-    </tr>
-    <tr>
-        <th>タスク</th>
-        <td><%= @task.content %></td>
-    </tr>
+  <tr>
+    <th>id</th>
+    <td><%= @task.id %></td>
+  </tr>
+  <tr>
+    <th>ステータスタスク</th>
+    <td><%= @task.status %></td>
+  </tr>
+  <tr>
+    <th>タスク</th>
+    <td><%= @task.content %></td>
+  </tr>
 </table>
-<%= link_to 'このタスクを編集する',edit_task_path(@task),class: 'btn btn-light' %>
-<%= link_to 'このタスクを削除する', @task, method: :delete, data: { confirm: '本当に削除してよろしいですか？' }, class: 'btn btn-danger' %>
+
+<%= link_to 'このメッセージを編集する', edit_task_path(@task), class: 'btn btn-light' %>
+<%= link_to 'このメッセージを削除する', @task, method: :delete, data: { confirm: '本当に削除してよろしいですか？' }, class: 'btn btn-danger' %>
